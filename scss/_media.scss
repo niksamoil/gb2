@@ -1,0 +1,357 @@
+@media screen and (max-width: 1230px) {
+    .header {
+        &-grid {
+            grid-column-gap: 15px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    .specialist {
+        .medical-card {
+            left: 45%;
+            bottom: 11%;
+        }
+    }
+    .services {
+        grid-auto-rows: minmax(300px, auto);
+        &-logo {
+            margin: 50px auto 0;
+        }
+        &-title {
+            font-size: 20px;
+        }
+        &-text {
+            font-size: 15px;
+        }
+    }
+    .choose {
+        padding-top: 50px;
+        .choose-grid {
+            grid-column-gap: 15px;
+            padding: 0 50px;
+            .women {
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .gallery {
+        padding: 30px 0;
+        &-grid {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 0;
+            grid-row-gap: 0;
+            grid-column-gap: 0;
+            img {
+                width: 100%;
+                object-fit: none;
+                object-position: center center;
+            }
+        }
+    }
+
+    .works {
+        padding: 50px 0;
+        &-grid {
+            grid-template-areas: 
+            "works-title works-title"
+            "works-img works-img2"
+            "works-title2 works-title2"
+            "works-heart works-heart"
+            ;
+
+            grid-template-columns: repeat(2, 1fr);
+            .works-title {
+                padding: 0 50px;
+                text-align: center;
+                grid-area: works-title;
+            }
+            .works-title2 {
+                padding: 0 50px;
+                margin-top: 50px;
+                text-align: center;
+                grid-area: works-title2;
+            }
+            .works-img {
+                padding: 0 50px;
+                grid-area: works-img;
+                text-align: center;
+            }
+            .works-img2 {
+                padding: 0 50px;
+                grid-area: works-img2;
+                text-align: center;
+            }
+            .works-heart {
+                padding: 0 180px;
+                grid-area: works-heart;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                &-text {
+                    display: none;
+                }
+                &-btn {
+                    display: block;
+                }
+            }
+            
+        }
+        .works-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                display: block;
+                margin-left: 0;
+            }
+        }
+    }
+    .team {
+        padding: 30px 0;
+        &-text {
+            padding: 0 50px;
+        }
+        &-grid {
+            margin-top: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .offer {
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &-btn {
+            margin-top: 20px;
+        }
+    }
+    .footer {
+        &-grid {
+            padding: 50px 0;
+            justify-items: center;
+            align-items: start;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 40px;
+            grid-row-gap: 50px;
+        }
+        .contacts {
+            form {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .header {
+        &-grid {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            .socials {
+                display: none;
+            }
+        }
+    }
+    .specialist {
+        .specialist-block {
+            .specialist-title {
+                font-size: 35px;
+            }
+            .specialist-text {
+                font-size: 15px;
+            }
+        }
+        .medical-card {
+            left: 43%;
+            bottom: 11%;
+        }
+    }
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .choose {
+        padding: 50px 0;
+        &-grid {
+            .women {
+                display: none;
+            }
+        }
+    }
+    .stats {
+        padding-bottom: 50px;
+        &-grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: minmax(400px, auto);
+        }
+    }
+    .works {
+        &-grid {
+            grid-template-columns: none;
+            grid-gap: 0;
+            .works-img, .works-img2 {
+                padding: 0;
+            }
+            .works-heart {
+                display: flex;
+                justify-content: center;
+                padding: 0 50px;
+            }
+            .works-img-text,.works-img2-text {
+                padding: 0 20px;
+            }
+        }
+    }
+    .gallery {
+        &-grid {
+            grid-gap: 10px;
+            margin-top: 15px;
+        }
+    }
+    .offer {
+        .container {
+            text-align: center;
+        }
+    }
+    .footer {
+        .container {
+            padding: 0 50px;
+            &-grid {
+                grid-template-columns: repeat(2, 300px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 682px) {
+    .header {
+        &-grid {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
+        .nav-menu {
+            ul {
+                li {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .specialist {
+        .read-btn {
+            margin-left: 100px;
+        }
+    }
+    .services {
+        grid-template-columns: 1fr;
+    }
+    .choose {
+        .choose-grid {
+            grid-template-areas: 
+            "head"
+            "pro1"
+            "pro2"
+            "pro3"
+            "pro4";
+            grid-template-columns: 1fr;
+            padding: 0 20px;
+            .profesional {
+                .logo {
+                    justify-content: center;
+                }
+                .pro-text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .stats {
+        .stats-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .works {
+        .works-grid {
+            grid-template-areas:
+        "works-title" 
+        "works-title"
+        "works-img" 
+        "works-img2"
+        "works-title2"
+        "works-title2"
+        "works-heart" 
+        "works-heart";
+        .works-heart {
+            padding: 0;
+        }
+        .works-heart-btn {
+            width: 80%;
+        }
+        }
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        .gallery-grid {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            img {
+                width: unset;
+            }
+        }
+    }
+    .team {
+        .team-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .offer {
+        display: none;
+    }
+    .footer {
+        .footer-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media screen and (max-width: 542px) {
+    .header {
+        .header-grid {
+            grid-template-columns: 1fr;
+        }
+        .nav-menu {
+            ul {
+                display: unset;
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .gallery {
+        .gallery-grid {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .footer {
+        .subfooter-wrapper {
+            text-align: center;
+        }
+    }
+}
