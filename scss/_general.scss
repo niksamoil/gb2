@@ -914,4 +914,97 @@
     }
 }
 
+.gallery {
+    &-grid {
+        @keyframes gallery {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.25);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        img:hover {
+            animation: gallery 1s linear both;
+        }
+    }
+    @keyframes text-animation {
+        0% {
+          letter-spacing: 1em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          letter-spacing: normal;
+          opacity: 1;
+        }
+      }
+    &:hover .gallery-title {
+        animation: text-animation 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+}
+
+.team {
+    &-title {
+        @keyframes text-animation {
+            0% {
+              letter-spacing: 1em;
+              opacity: 0;
+            }
+            40% {
+              opacity: 0.6;
+            }
+            100% {
+              letter-spacing: normal;
+              opacity: 1;
+            }
+        }
+    }
+    &:hover .team-title {
+        animation: text-animation 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        transition-duration: 0.3s;
+    }
+}
+
+.stats {
+    &-grid {
+        .stats-item {
+            .stats-logo {
+                @keyframes heartbeat {
+                    from {
+                      transform: scale(1);
+                      transform-origin: center center;
+                      animation-timing-function: ease-out;
+                    }
+                    10% {
+                      transform: scale(0.91);
+                      animation-timing-function: ease-in;
+                    }
+                    17% {
+                      transform: scale(0.98);
+                      animation-timing-function: ease-out;
+                    }
+                    33% {
+                      transform: scale(0.87);
+                      animation-timing-function: ease-in;
+                    }
+                    45% {
+                      transform: scale(1);
+                      animation-timing-function: ease-out;
+                    }
+                  }
+                  
+                img {
+                    animation: heartbeat 1.5s ease-in-out infinite both;
+                }
+            }
+        }
+    }
+}
+
 
